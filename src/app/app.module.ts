@@ -10,6 +10,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./main/main.module').then(x => x.MainModule)},
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(x => x.AdminModule) }
 ];
 
 @NgModule({
