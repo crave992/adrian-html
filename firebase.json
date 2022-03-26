@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "src",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   },
   "firestore": {
@@ -19,5 +13,26 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9000
+    },
+    "firestore": {
+      "port": 8000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "pubsub": {
+      "port": 8081
+    },
+    "storage": {
+      "port": 9001
+    },
+    "ui": {
+      "enabled": true,
+      "port": 8010
+    }
   }
 }
