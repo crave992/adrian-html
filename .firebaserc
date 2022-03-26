@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "adrian-firebase": {
+      "hosting": {
+        "adrian-html": [
+          "adrian-firebase"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "adrian-firebase"
+  }
+}
