@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="nav-bar">
+      <ul>
+        <li *ngFor="let route of routes">
+          <a routerLink="{{route.path}}">{{route.data['title']}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

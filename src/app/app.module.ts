@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from "@angular/router";
+import { RouterModule } from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { HomeModule } from './home/home.module';
+import { SharedModule } from './shared/shared.module';
+import { LayoutsModule } from './@config/layouts/layouts.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-const routes: Routes = [
-  { path: '', loadChildren: () => import('./main/main.module').then(x => x.MainModule)},
-  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(x => x.AdminModule) }
-];
 
 @NgModule({
   declarations: [
@@ -19,13 +19,18 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    RouterModule,
+    HomeModule,
+    LayoutsModule,
+    SharedModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule
   ],
   exports: [
-    RouterModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
