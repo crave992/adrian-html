@@ -3,7 +3,7 @@
     <div class="nav-bar">
       <ul>
         <li *ngFor="let route of routes">
-          <a routerLink="{{route.path}}">{{route.data['title']}}</a>
+          <a routerLink="{{route.path}}" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">{{route.data['title']}}</a>
         </li>
       </ul>
     </div>
