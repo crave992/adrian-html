@@ -8,7 +8,7 @@ import { LoginComponent } from "./auth/login/login.component";
 @NgModule({
   declarations: [
     AdminComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     AdminRoutingModule,

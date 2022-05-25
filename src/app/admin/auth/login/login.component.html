@@ -3,17 +3,21 @@
     <div class="container-fluid">
       left
     </div>
+
   </div>
   <div class="col-12 col-md-3 col-sm-2 bg-light">
     <div class="container-fluid">
-      <form [formGroup]="form" (ngSubmit)="submit()">
+      <form [formGroup]="loginForm" (ngSubmit)="submit()">
         <div class="row mt-5">
+          <div class="col-12 text-center">
+            <img src="assets/img/logo.svg" alt="logo" class="mb-5">
+          </div>
           <div class="col-12">
             <h2>Login</h2>
           </div>
           <mat-form-field appearance="outline" class="col-12">
             <mat-label>Email</mat-label>
-            <input type="text" matInput placeholder="Username" formControlName="username">
+            <input type="text" matInput placeholder="Email" formControlName="email">
           </mat-form-field>
           <mat-form-field appearance="outline" class="col-12">
             <mat-label>Password</mat-label>
@@ -21,7 +25,7 @@
           </mat-form-field>
         </div>
         <div class="button">
-          <button type="submit" mat-raised-button color="primary">Login</button>
+          <button type="submit" mat-raised-button color="primary" class="text-light">Login</button>
         </div>
 
       </form>

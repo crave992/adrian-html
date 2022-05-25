@@ -14,14 +14,14 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  form: FormGroup = new FormGroup({
-    username: new FormControl(''),
+  loginForm: FormGroup = new FormGroup({
+    email: new FormControl(''),
     password: new FormControl(''),
   });
 
   submit() {
-    if (this.form.valid) {
-
+    if (this.loginForm.valid) {
+      console.log(this.loginForm.value)
     }
   }
 }
