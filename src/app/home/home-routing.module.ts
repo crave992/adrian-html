@@ -6,7 +6,7 @@ const routes: Routes = [
     path: '',
     data: {
       title: 'Home',
-    }, 
+    },
     loadChildren: () => import('./welcome/welcome.module').then(x => x.WelcomeModule),
   },
   {
@@ -34,7 +34,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forChild(routes)
   ],
   exports: [
     RouterModule

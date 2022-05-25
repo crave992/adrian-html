@@ -1,13 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styles: [
-  ],
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: [],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ContactComponent implements OnInit {
+export class AdminComponent implements OnInit {
 
   constructor() { }
 

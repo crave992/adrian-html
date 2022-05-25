@@ -1,0 +1,32 @@
+app-login {
+  display: block;
+  height: 100%;
+
+  .login {
+    background: url(../../../img/bg-admin.jpeg)no-repeat center center;
+    background-attachment: fixed;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

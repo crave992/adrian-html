@@ -4,12 +4,14 @@ import { HorizontalComponent } from './horizontal/horizontal.component';
 import { RouterModule } from '@angular/router';
 import { HomeHeaderComponent } from './templates/home-header/home-header.component';
 import { FooterComponent } from './templates/footer/footer.component';
+import { VerticalLayout1Component } from './vertical-layout1/vertical-layout1.component';
 
 @NgModule({
   declarations: [
     HorizontalComponent,
     HomeHeaderComponent,
-    FooterComponent
+    FooterComponent,
+    VerticalLayout1Component
   ],
   imports: [
     CommonModule,

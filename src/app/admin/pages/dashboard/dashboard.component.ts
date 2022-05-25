@@ -1,13 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styles: [
-  ],
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ContactComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
   constructor() { }
 

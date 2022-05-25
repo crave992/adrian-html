@@ -1,9 +1,9 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="nav-bar">
-      <ul>
-        <li *ngFor="let route of routes">
-          <a routerLink="{{route.path}}">{{route.data['title']}}</a>
+    <div class="navbar-collapse">
+      <ul class="navbar-nav flex-row me-auto mb-2 mb-lg-0">
+        <li *ngFor="let route of routes" class="nav-item">
+          <a routerLink="{{route.path}}" class="nav-link px-3">{{route.data['title']}}</a>
         </li>
       </ul>
     </div>

@@ -11,7 +11,7 @@ import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { LayoutsModule } from './@config/layouts/layouts.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   exports: [
     SharedModule
