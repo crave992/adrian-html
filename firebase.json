@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/adrian-html",
+    "public": "src",
     "ignore": [
       "firebase.json",
       "**/.*",
