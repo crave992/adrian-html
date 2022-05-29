@@ -16,6 +16,24 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.logo {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+
+  &__text {
+    color: $primary-color;
+    font-family: Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 25px !important;
+    text-transform: uppercase !important;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+}
+
 footer {
   text-align: center;
   bottom: 0;

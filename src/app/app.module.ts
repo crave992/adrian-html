@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { HomeModule } from './home/home.module';
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './@config/shared/shared.module';
 import { LayoutsModule } from './@config/layouts/layouts.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';

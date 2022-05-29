@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Bangers">@import url(https://fonts.googleapis.com/css2?family=Bangers%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+    <filter id="drop-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 1 2 1 0.63 rgba(0,0,0,0.46)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="1" dy="2"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1.26"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.46)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <ellipse style="stroke-width: 3px; filter: url(#drop-shadow-filter-0); stroke: rgb(76, 67, 247); fill: rgb(8, 0, 160);" cx="41" cy="41" rx="39" ry="38.778"/>
+  <ellipse style="stroke-width: 3px; stroke: rgb(171, 145, 12); fill: rgb(247, 218, 67);" cx="41.422" cy="40.835" rx="33.196" ry="32.609"/>
+  <text style="fill: rgb(171, 145, 12); font-family: Bangers; font-size: 73px; stroke: rgb(102, 94, 255); white-space: pre;" x="35.953" y="72.855">V</text>
+  <text style="fill: rgb(8, 0, 160); font-family: Bangers; font-size: 76px; paint-order: fill; stroke: rgb(102, 94, 255); white-space: pre;" x="10.812" y="63.001">A</text>
+</svg>
