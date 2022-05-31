@@ -1,6 +1,11 @@
-<router-outlet></router-outlet>
+<div class="side-panel col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3 bg-light">
+  <app-login *ngIf="routerChildLength === 0"></app-login>
+</div>
+<div class="content" [ngClass]="{'content__bg-image': routerChildLength === 0}  ">
+  <router-outlet></router-outlet>
+</div>
 <div class="row justify-content-end">
-  <app-footer class="col-12 col-sm-5 col-md-7 col-lg-8 col-xl-9 bg-light"></app-footer>
+  <app-footer class="col-12 bg-light"></app-footer>
 </div>
 
 

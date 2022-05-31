@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HomeHeaderComponent } from './templates/home-header/home-header.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { VerticalLayout1Component } from './vertical-layout1/vertical-layout1.component';
+import { AdminModule } from 'src/app/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { VerticalLayout1Component } from './vertical-layout1/vertical-layout1.co
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    AdminModule
   ]
 })
 export class LayoutsModule { }

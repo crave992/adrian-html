@@ -1,4 +1,28 @@
 app-vertical-layout1 {
   display: block;
   height: 100%;
+
+  .side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .content {
+    display: block;
+    height: 100%;
+
+    &__bg-image {
+      background: url(../../img/bg-admin.jpeg)no-repeat center center;
+      background-attachment: fixed;
+    }
+  }
 }
