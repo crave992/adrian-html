@@ -21,15 +21,21 @@ body {
   max-width: 150px;
   margin: 0 auto;
 
+  &__home {
+    width: 100%;
+    max-width: 25px;
+    margin: 0 10px 0 0;
+  }
+
   &__text {
-    color: $primary-color;
+    color: $text-primary;
     font-family: Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 700 !important;
     font-size: 25px !important;
     text-transform: uppercase !important;
 
     span {
-      color: $secondary-color;
+      color: $text-secondary;
     }
   }
 }
@@ -41,5 +47,6 @@ footer {
   left: 0;
   right: 0;
   width: 100%;
+  box-shadow: 0 0 15px -10px #000;
   z-index: 9999;
 }
