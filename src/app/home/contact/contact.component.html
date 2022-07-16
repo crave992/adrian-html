@@ -1,1 +1,28 @@
-<p>contact works!</p>
+<div class="d-flex flex-wrap justify-content-center align-items center">
+  <div class="w-50 container-fluid py-5">
+    <h1>Contact Me</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="col-12">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your name" formControlName="name">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="col-12">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="col-12">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Enter your phone number" formControlName="phone">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="col-12">
+        <mat-label>Message</mat-label>
+        <textarea matInput placeholder="Message body" formControlName="message"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="text-light col-12">Submit</button>
+    </form>
+
+  </div>
+  <div class="w-50">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0993485654817!2d120.5935639145885!3d16.419779988665205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a160ecbc1861%3A0xf7507bec4567014c!2s19%20Slaughterhouse%20Rd%2C%20Baguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1654941094583!5m2!1sen!2sph" style="border:0;width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
